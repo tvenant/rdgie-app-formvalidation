@@ -17,6 +17,8 @@ public class FormController {
 	@RequestMapping(value="/formPage", method=RequestMethod.GET)
 	public String loadFormPage(Model m) {
 		m.addAttribute("subscriber", new Subscriber());
+		
+		//This is testing from Git commit
 		return "formPage";
 	}
 	
@@ -29,4 +31,5 @@ public class FormController {
 		m.addAttribute("message", "Successfully saved person: " + subscriber.toString());
 		return "formPage";
 	}
+	
 }
